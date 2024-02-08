@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+	<title>Contact❤KB</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/> <!--臉書等小圖示-->
+	<link rel="stylesheet" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div id="preloader">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 col-md-3 order-2 order-sm-1">
+					<div class="header__social">
+						<a href="https://zh-tw.facebook.com/netflix"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/netflix"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com/netflixtw/?hl=zh-tw"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
+					<a href="./index.html" class="site-logo">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<nav class="main__menu">
+				<ul class="nav__menu">
+					<li><a href="./index.html" class="button">Home</a></li>
+					<li><a href="./name.html" class="button">About</a></li>
+					<li><a href="./habits.html" class="button">Hobbies</a></li>
+					<li><a href="./final.html"class="button">Bucket List </a></li>
+					<li><a href="./contact.html"class="button">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="contact__page">
+		<div class="contact__warp" align="center" valign="center">
+
+				<div class="col-md-6" >
+					<h2>Contact Me</h2>
+					<img src="img/profile.jpg" alt="">
+				</div>
+					<div class="contact__text">
+						</br>
+						<table style="border-top:3px #FFD382 solid;border-bottom:3px #82FFFF solid;" cellpadding="10" border='0' >
+							<tr><td>Phone: 0979-580-168</td></tr>
+							<tr><td>Email: love21460@gmail.com</td></tr>
+							<tr><td>Address: No. 229, Jianxing Rd., Zhongli Dist., Taoyuan City </td></tr>
+						</table>
+				</div>
+			</div>
+	</section>
+	<footer class="footer__section">
+		<div class="container">
+			<div class="footer__copyright__text">
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <em class="fa fa-heart" aria-hidden="true"></em> by <a href="mailto:vip168.vip168@mas.hinet.net" target="_blank">Vip7-11.com.tw</a></p>
+			</div>
+		</div>
+	</footer>
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+    
+  		var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+  		var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+
+	    $(".button").mousedown(function() {
+			audio2.load();
+			audio2.play();
+	    });
+
+		$(".button").mouseup(function() {
+			audio.load();
+			audio.play();
+			});
+	    });
+	</script>
+	</body>
+</html>
